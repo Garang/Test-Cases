@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://build.openhmisafrica.org/" />
+<title>M-ShwariPaymentModeCrerationTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">M-ShwariPaymentModeCrerationTest</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Manage Payment Modes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Payment Mode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=c4_name</td>
+	<td> M-Shwari</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=c4_description</td>
+	<td>Mobile Transfer</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[type=&quot;button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>Account Name: SIM-Kenya</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=format</td>
+	<td>label=java.lang.String</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.bbf-actions &gt; button[type=&quot;button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='name'])[2]</td>
+	<td>Account Number: 888888</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'OK')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.bbf-actions &gt; button[type=&quot;button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='name'])[3]</td>
+	<td>Mobile Number: 0700711172</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'OK')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='existing-form']</td>
+	<td>M-Shwari</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
