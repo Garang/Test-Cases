@@ -11,6 +11,32 @@
 <thead>
 <tr><td rowspan="1" colspan="3">M-ShwariPaymentModeCrerationTest</td></tr>
 </thead><tbody>
+<!---->
+<tr>
+	<td>open</td>
+	<td>/openmrs/logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/openmrs/index.htm?noredirect=true</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>garanga</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Password123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>link=Administration</td>
@@ -28,13 +54,13 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=c4_name</td>
-	<td> M-Shwari</td>
+	<td>id=c14_name</td>
+	<td>M-Shwari</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=c4_description</td>
-	<td>Mobile Transfer</td>
+	<td>id=c14_description</td>
+	<td>Mobile Transaction</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -64,6 +90,16 @@
 <tr>
 	<td>type</td>
 	<td>xpath=(//input[@id='name'])[2]</td>
+	<td>Account Number</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>xpath=(//select[@id='format'])[2]</td>
+	<td>label=java.lang.Integer</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='name'])[2]</td>
 	<td>Account Number: 888888</td>
 </tr>
 <tr>
@@ -75,6 +111,16 @@
 	<td>click</td>
 	<td>css=div.bbf-actions &gt; button[type=&quot;button&quot;]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='name'])[3]</td>
+	<td>Mobile Number: </td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>xpath=(//select[@id='format'])[3]</td>
+	<td>label=java.lang.Integer</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -92,7 +138,12 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
+	<td>click</td>
+	<td>//div[@id='existing-form']/div/table/tbody/tr[6]/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
 	<td>//div[@id='existing-form']</td>
 	<td>M-Shwari</td>
 </tr>
